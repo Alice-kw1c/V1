@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT-Loket - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <h1>ICT-Loket</h1>
+            <button class="hamburger" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav id="main-nav" class="main-nav">
+            <a href="ict-loket.html">Home</a>
+            <a href="diensten.html">Diensten</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact</h2>
+        <p>Heeft u een vraag of probleem? Neem contact op via e-mail: <a href="mailto:alice.geurtsvankessel@edu-kw1c.nl">alice.geurtsvankessel@edu-kw1c.nl</a> of bezoek ons op locatie.</p> Verlengde Noordkade 14 Veghel
+    </main>
+    <footer>
+        &copy; 2026 ICT-Loket. Alle rechten voorbehouden.
+    </footer>
+    <script>
+      const btn = document.querySelector('.hamburger');
+      const nav = document.getElementById('main-nav');
+      if (btn && nav) {
+        btn.addEventListener('click', () => {
+          const open = nav.classList.toggle('open');
+          btn.setAttribute('aria-expanded', String(open));
+        });
+      }
+    </script>
+</body>
+</html>

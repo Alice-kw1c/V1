@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ICT-Loket is uw centrale punt voor ICT-ondersteuning. Hier vindt u informatie over onze diensten en hoe u contact met ons kunt opnemen.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT-Loket - Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <h1>ICT-Loket</h1>
+            <button class="hamburger" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav id="main-nav" class="main-nav">
+            <a href="ict-loket.html">Home</a>
+            <a href="diensten.html">Diensten</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        
+        <h2>Welkom bij het ICT-Loket</h2>
+        <p>Het ICT-Loket is uw centrale punt voor ICT-ondersteuning. Hier vindt u informatie over onze diensten en hoe u contact met ons kunt opnemen.</p>
+        <picture>
+            <img src="Screenshot 2026-02-03 113231.png" alt="ICT-Loket logo">
+        </picture>
+    </main>
+    <section>
+        <h2>We willen jullie graag helpen</h2>
+        <p>Windows 11 installeren, Telefoon repareren, Goedkope laptop verkopen</p>
+        <picture>
+            <img src="Screenshot 2026-02-03 113231.png" alt="ICT-Loket logo">
+        </picture>
+    </section>
+    
+    <footer>
+    <div class="footer-bottom">
+        <div class="footer-powered-by">
+            <span>Powered by</span>
+            <img src="assets/logo_blue_red.png" alt="powered by logo">
+        </div>
+    </div>
+        &copy; 2026 ICT-Loket. Alle rechten voorbehouden.
+    </footer>
+    <script>
+      const btn = document.querySelector('.hamburger');
+      const nav = document.getElementById('main-nav');
+      if (btn && nav) {
+        btn.addEventListener('click', () => {
+          const open = nav.classList.toggle('open');
+          btn.setAttribute('aria-expanded', String(open));
+        });
+      }
+    </script>
+</body>
+</html>
