@@ -61,6 +61,7 @@ nav a {
 }
 nav a:hover {
     background: #006f63;
+    color: #fff;
 }
 nav a:hover {
     background: #00827f;
@@ -157,7 +158,7 @@ footer {
 .hamburger span {
     display: block;
     height: 3px;
-    background: #000000; /* zwarte streepjes */
+    background: #ffffff; /* zwarte streepjes */
     margin: 4px 0;
     border-radius: 999px;
     transition: transform 0.2s ease, opacity 0.2s ease;
